@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    /* border: blue 3px solid; */
+}
+
+body{
+    background-color: grey;
+}
+
+.wrapper{
+    background-image: url("pastel-moon.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    width: min(100% - 3rem, 65ch);
+    height: min(100vh - 6rem);
+    margin-top:3em;
+    margin-inline: auto;
+    border: orange 3px solid;
+
+}
+
+.text-wrapper{
+    /* margin-bottom:1em; */
+    position:absolute;
+    bottom:0;
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+      background-color: lightblue;
+      height: min(60vh);
+      margin-top:6em;
+      margin-top:6em;
+    }
+  }
