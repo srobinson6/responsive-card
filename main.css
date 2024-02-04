@@ -7,8 +7,28 @@ body{
     background-color: grey;
 }
 
+/* settings for people that have stated that they want reduced motion */
+@media (prefers-reduced-motion){
+    body{
+        background-color: rgb(230, 20, 20);
+    }
+    .wrapper{
+        background-image: url("moon-static.jpg");
+    }
+}
+/* settings for the background if the person has not set a motion preference, meaning they are fine with motion */
+@media (prefers-reduced-motion:no-preference){
+    body{
+        background-color: greenyellow;
+    }
+    .wrapper{
+        background-image: url("pastel-moon.gif");
+    }
+}
+
+/* Settings for the wrapper, regardless of motion settings */
 .wrapper{
-    background-image: url("pastel-moon.gif");
+    /* background-image: url("pastel-moon.gif"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
